@@ -1,0 +1,34 @@
+{
+    "name": "snd/cms-extensions",
+    "description": "CMS Extension",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Silvio Pahrig",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "shopware/core": "6.2.*",
+        "shopware/administration": "6.2.*",
+        "shopware/storefront": "6.2.*"
+    },
+    "extra": {
+        "shopware-plugin-class": "Snd\\CmsExtensions\\CmsExtensions",
+        "label": {
+            "de-DE": "CMS Erweiterungen",
+            "en-GB": "CMS Extension"
+        },
+        "description": {
+            "de-DE": "CMS Erweiterungen",
+            "en-GB": "CMS Extension"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Snd\\CmsExtensions\\": "src/"
+        }
+    }
+}

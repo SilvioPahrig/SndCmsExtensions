@@ -1,0 +1,16 @@
+.snd_cms_block_big_five_grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-column-gap: 20px;
+    padding: 15px;
+
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .snd-cms-block-big-five-grid-clo img {
+        height: 80px;
+    }
+}

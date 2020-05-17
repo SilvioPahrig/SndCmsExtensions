@@ -1,0 +1,64 @@
+{% block cms_block_snd_big_five_grid %}
+    {% set id = element.id %}
+
+    <div class="row">
+        {% block cms_block_snd_big_five_grid_big %}
+            {% set element = block.slots.getSlot('big') %}
+            <div class="col-md-5" data-cms-element-id="{{ id }}">
+                {% block cms_block_snd_big_five_grid_big_inner %}
+                    {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                {% endblock %}
+            </div>
+        {% endblock %}
+
+
+        <div class="col-md-7" data-cms-element-id="{{ id }}">
+            <div class="row">
+                {% block cms_block_snd_big_five_grid_col_one %}
+                    <div class="col-md-6" data-cms-element-id="{{ id }}">
+                        {% block cms_block_snd_big_five_grid_col_one_inner %}
+                            {% set element = block.slots.getSlot('one') %}
+                            {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+                {% block cms_block_snd_big_five_grid_col_two %}
+                    <div class="col-md-6" data-cms-element-id="{{ id }}">
+                        {% block cms_block_snd_big_five_grid_col_two_inner %}
+                            {% set element = block.slots.getSlot('two') %}
+                            {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+                {% block cms_block_snd_big_five_grid_col_three %}
+                    <div class="col-md-6" data-cms-element-id="{{ id }}">
+                        {% block cms_block_snd_big_five_grid_col_three_inner %}
+                            {% set element = block.slots.getSlot('three') %}
+                            {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+                {% block cms_block_snd_big_five_grid_col_four %}
+                    <div class="col-md-6" data-cms-element-id="{{ id }}">
+                        {% block cms_block_snd_big_five_grid_col_four_inner %}
+                            {% set element = block.slots.getSlot('four') %}
+                            {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+
+                {% block cms_block_snd_big_five_grid_col_five %}
+                    <div class="col-md-6" data-cms-element-id="{{ id }}">
+                        {% block cms_block_snd_big_five_grid_col_five_inner %}
+                            {% set element = block.slots.getSlot('five') %}
+                            {% sw_include "@Storefront/storefront/element/cms-element-" ~ element.type ~ ".html.twig" ignore missing %}
+                        {% endblock %}
+                    </div>
+                {% endblock %}
+            </div>
+        </div>
+    </div>
+{% endblock %}

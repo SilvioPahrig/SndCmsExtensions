@@ -1,0 +1,15 @@
+{% block snd_cms_block_big_five_grid %}
+    <div class="snd_cms_block_big_five_grid">
+        <div class="snd_cms_block_big_five_grid_col">
+            <slot name="big"></slot>
+        </div>
+        <div class="snd_cms_block_big_five_grid_col">
+            <slot name="one"></slot>
+            <slot name="two"></slot>
+        </div>
+        <div class="sw-cms-block-image-simple-snd_cms_block_big_five_grid_col-bottom">
+            <slot name="three"></slot>
+            <slot name="four"></slot>
+        </div>
+    </div>
+{% endblock %}
